@@ -1,26 +1,188 @@
+/* Basic Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navigation Styling */
+.nav-container {
+	background-color: #333;
+	padding: 1rem 0;
+	position: sticky;
+	top: 0;
+}
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.main-nav a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+	color: #ffd700;
+}
+
+/* Header Styling */
+.header {
+	text-align: center;
+	padding: 3rem 1rem;
+	background-color: #fff;
+}
+
+.header h1 {
+	color: #333;
+	font-size: 2.5rem;
+}
+
+/* Main Content Styling */
+.main-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	background-color: #fff;
+}
+
+h2 {
+	color: #333;
+	margin-bottom: 1rem;
+	font-size: 1.8rem;
+}
+
+/* Making the body look nice */
+body {
+	font-family: Arial, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+}
+
+/* Styling the headings */
+h1 {
+	color: #2c3e50;
+	text-align: center;
+}
+
+/* Styling the links */
+a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Styling paragraphs */
+p {
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Footer Styling */
+.footer {
+	text-align: center;
+	padding: 2rem;
+	background-color: #333;
+	color: white;
+}
+
+/* Form styling */
+.contact-container {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+button[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+	border-color: #28a745;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+	border-color: #dc3545;
+}
+
+.error-message {
+	color: #dc3545;
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+}
+
+/* Styling iframe */
 .iframe-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    margin: 2rem 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	margin: 2rem 0;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .iframe-container {
-        padding-bottom: 75%; /* Adjust aspect ratio for mobile */
-    }
+	.iframe-container {
+		padding-bottom: 75%; /* Adjust aspect ratio for mobile */
+	}
 }

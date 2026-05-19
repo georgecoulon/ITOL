@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { calculateInvestmentResults, formatter } from '../util/investments.js';
 import { generatepdf } from '../util/generatereport.js';
 
@@ -29,11 +29,11 @@ const OutputData = ({ inputValue }) => {
 
   const [results, setResults] = useState(null);
 
-  function handleGeneratePDF() {
+  const handleGeneratePDF = useCallback(() => {
     const resdata = calculateInvestmentResults(userInput);
     setResults(resdata);
-    generatepdf({...userInput, results:resdata});
-  }
+    generatepdf({...userInput, results:resdata});    
+  }, [userInput]);
 
   const resultData = calculateInvestmentResults(inputValue);
 

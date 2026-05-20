@@ -4,6 +4,14 @@ import { calculateInvestmentResults, formatter } from '../util/investments.js';
 import { generatepdf } from '../util/generatereport.js';
 
 const OutputData = ({ inputValue }) => {
+  const handleGeneratePDF = useCallback(() => {
+    const resdata = calculateInvestmentResults(inputValue);
+    
+    generatepdf({...inputValue, results:resdata});    
+  }, [inputValue]);
+
+  const resultData = calculateInvestmentResults(inputValue);
+
   if (inputValue.duration <= 0) {
     return <div className="error">Please enter a duration greater than zero.</div>;
   }
@@ -19,23 +27,6 @@ const OutputData = ({ inputValue }) => {
   if (inputValue.expectedReturn < 0) {
     return <div className="error">Please enter a non-negative Expected Return.</div>;
   }
-
-  const [userInput, setUserInput] = useState({
-    initialInvestment: 10000,
-    annualInvestment: 1200,
-    expectedReturn: 6,
-    duration: 10
-  });
-
-  const [results, setResults] = useState(null);
-
-  const handleGeneratePDF = useCallback(() => {
-    const resdata = calculateInvestmentResults(userInput);
-    setResults(resdata);
-    generatepdf({...userInput, results:resdata});    
-  }, [userInput]);
-
-  const resultData = calculateInvestmentResults(inputValue);
 
   return (
       <div className="center">

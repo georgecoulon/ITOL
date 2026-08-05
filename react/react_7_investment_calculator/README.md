@@ -189,6 +189,7 @@ Main styles are located in:
 src/App.css
 
 **Running the Application Locally**
+
 Prerequisites
 
 Ensure you have:
@@ -210,6 +211,7 @@ Install dependencies:
 npm install
 
 **Start Development Server**
+
 Run:
 
 npm run dev

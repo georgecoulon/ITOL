@@ -128,6 +128,7 @@ const handleGeneratePDF = useCallback(() => {
 This memoises the callback function and avoids unnecessary recreation between renders.
 
 **How It Works**
+
 Investment Calculation
 
 The calculation logic is separated from the React components and stored in:

@@ -221,6 +221,3 @@ Run:
 npm run dev
 
 The application will be available at the local Vite development URL shown in the terminal.
-Separating business logic from presentation
-Integrating third-party libraries
-Generating documents from application data

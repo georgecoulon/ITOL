@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Digital Vellum | New Entry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">The Digital Vellum</a>
+
+    <nav class="main-nav">
+      <a href="vault.html">Archive</a>
+
+      <a href="new-entry.html" class="editor-nav-link active">
+        New Entry
+      </a>
+
+      <a href="vault.html" class="profile-link" aria-label="Open profile and vault">
+        <span class="profile-icon">●</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="editor-main">
+    <aside class="editor-insight">
+      <p class="insight-heading">Depth Insight</p>
+      <p>
+        Write without judgment. The vellum remembers only what
+        you choose to ink.
+      </p>
+    </aside>
+
+    <section class="editor-container">
+      <div class="editor-heading">
+        <p class="editor-date">Wednesday, May 22 2024</p>
+        <h1>Untitled Reflection</h1>
+      </div>
+
+      <div class="editor-tags">
+        <span>● Thoughtful</span>
+        <button type="button">+ Add Tag</button>
+      </div>
+
+      <form class="entry-form">
+        <label for="entry-title" class="sr-only">Entry title</label>
+        <input
+          type="text"
+          id="entry-title"
+          name="title"
+          placeholder="Untitled Reflection"
+        >
+
+        <label for="entry-body" class="sr-only">Reflection</label>
+        <textarea
+          id="entry-body"
+          name="body"
+          placeholder="Begin your reflection..."
+        ></textarea>
+
+        <div class="editor-actions">
+          <div class="editor-options">
+            <button type="button" class="text-button">
+              Insert Memory
+            </button>
+
+            <button type="button" class="text-button">
+              Private
+            </button>
+          </div>
+
+          <div class="save-actions">
+            <a href="index.html" class="discard-link">Discard</a>
+            <button type="submit" class="save-button">Save Entry</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 The Digital Vellum. Designed for reflection.</p>
+
+    <nav>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="vault.html">Archive</a>
+    </nav>
+  </footer>
+</body>
+</html>

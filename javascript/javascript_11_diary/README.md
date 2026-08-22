@@ -90,14 +90,14 @@ localStorage provides storage associated with the document's origin and its data
 MDN Documentation: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 **Technologies Used**
-HTML5
-CSS3
-JavaScript
-CSS Grid
-Flexbox
-DOM Manipulation
-Web Storage API
-JSON
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- Flexbox
+- DOM Manipulation
+- Web Storage API
+- JSON
 
 **What I Learned**
 

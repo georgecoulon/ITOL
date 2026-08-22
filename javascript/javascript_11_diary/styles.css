@@ -633,3 +633,35 @@ button {
     gap: 15px;
   }
 }
+
+/* ------------------------------
+   Empty Home State
+------------------------------ */
+
+.empty-message {
+  grid-column: 1 / -1;
+  padding: 70px 30px;
+  border: 1px dashed #d8d8d5;
+  border-radius: 8px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.empty-message h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.empty-message p {
+  margin-bottom: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+.empty-message a {
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #222;
+  font-size: 12px;
+  font-weight: 700;
+}

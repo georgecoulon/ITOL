@@ -4,6 +4,10 @@ The Digital Vellum is a multi-page digital diary built using HTML, CSS and JavaS
 
 The project focuses on responsive layout, navigation between multiple HTML pages, DOM manipulation and persistent browser storage.
 
+**Screenshot**
+
+![Alt text](/diary_screenshot.jpg?raw=true "Diary Screenshot")
+
 **Features**
 - Responsive diary interface built with CSS Grid and Flexbox
 - Three separate pages connected using standard HTML links
@@ -46,19 +50,29 @@ slice(-5) creates a new array containing a maximum of the final five entries. Be
 For example, if the entries array contains:
 
 Entry 1
+
 Entry 2
+
 Entry 3
+
 Entry 4
+
 Entry 5
+
 Entry 6
+
 Entry 7
 
 the home page displays:
 
 Entry 7
+
 Entry 6
+
 Entry 5
+
 Entry 4
+
 Entry 3
 
 The Vault uses a similar approach but does not use slice(), so every saved entry is displayed.

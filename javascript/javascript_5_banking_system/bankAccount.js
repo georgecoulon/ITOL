@@ -6,22 +6,51 @@ class BankAccount {
     }
 
     deposit(amount) {
+        if (amount <= 0) {
+            console.log("Deposit amount must be greater than 0.");
+            return;
+        }
+
         this.balance += amount;
-        console.log(`$${amount} deposited. Current balance: $${this.balance}`);
+        console.log(
+            `${this.accountHolder} deposited £${amount.toFixed(2)}.`
+        );
     }
 
     withdraw(amount) {
-        if (amount > this.balance) {
-            console.log("Insufficient funds");
-        } else {
-            this.balance -= amount;
-            console.log(`$${amount} withdrawn. Current balance: $${this.balance}`);
+        if (amount <= 0) {
+            console.log("Withdrawal amount must be greater than 0.");
+            return;
         }
+
+        if (amount > this.balance) {
+            console.log(
+                `Insufficient funds. ${this.accountHolder} only has £${this.balance.toFixed(2)} available.`
+            );
+            return;
+        }
+
+        this.balance -= amount;
+        console.log(
+            `${this.accountHolder} withdrew £${amount.toFixed(2)}.`
+        );
     }
 
     checkBalance() {
-        console.log(`Account balance for ${this.accountHolder}: $${this.balance}`);
+        console.log(
+            `${this.accountHolder}'s balance is £${this.balance.toFixed(2)}.`
+        );
+
+        return this.balance;
     }
 }
 
-export default BankAccount;
+// Make the class work with Node.js
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = BankAccount;
+}
+
+// Make the class available in the browser
+if (typeof window !== "undefined") {
+    window.BankAccount = BankAccount;
+}

@@ -6,7 +6,7 @@ The project focuses on responsive layout, navigation between multiple HTML pages
 
 **Screenshot**
 
-![Alt text](/diary_screenshot.jpg?raw=true "Diary Screenshot")
+![Diary Screenshot](/diary_screenshot.jpg?raw=true)
 
 **Features**
 - Responsive diary interface built with CSS Grid and Flexbox

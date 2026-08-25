@@ -97,6 +97,10 @@ account1.checkBalance();
 
 The results of each operation will be displayed in the browser console.
 
+**Link**
+
+Live deployment: https://simple-banking-system-19a8vb7z7-george-337d.vercel.app/
+
 **What I Learnt**
 
 This project demonstrates some of the core concepts of JavaScript and object-oriented programming in a small practical application.
